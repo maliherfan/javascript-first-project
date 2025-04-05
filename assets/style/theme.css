@@ -195,7 +195,7 @@ main section.invite .invitationLink a {
 }
 
 main section.invite div.sectionImg {
-    background-image: url(../images/Parallax_image_01-1.jpg);
+    background-image: url(../images/parallax_image_01-1.jpg);
 }
 
 main section.timing .timingWrapper {
@@ -403,7 +403,7 @@ main section.story .storyPart .storyImg:hover {
 }
 
 main section.story div.sectionImg {
-    background-image: url(../images/Parallax_image_03-1.jpg);
+    background-image: url(../images/parallax_image_03-1.jpg);
 }
 
 main section.gallery .galleryPart {
@@ -456,7 +456,7 @@ main section.gallery .groomAndBride .bride {
 }
 
 main section.gallery div.sectionImg {
-    background-image: url(../images/Parallax_image_02-1.jpg);
+    background-image: url(../images/parallax_image_02-1.jpg);
 }
 
 main section.detail {
