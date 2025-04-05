@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+:root {
+    --main-red-color: #B9675E;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-image: url(../images/home_slider.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hero {
+    position: fixed;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero h2 {
+    font-size: 66px;
+}
+
+.hero p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.hero a {
+    color: black;
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero a:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.nav {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #90A8AD;
+    padding: 0px 100px;
+    position: absolute;
+    bottom: 0;
+    gap: 30px;
+    z-index: 1000;
+}
+
+.nav ul {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nav ul li a {
+    width: 20%;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: .6;
+    transition: .3s;
+}
+
+.nav ul li a.selected {
+    opacity: 1;
+}
+
+.nav ul li a:hover {
+    opacity: 1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.nav .avadaIcon {
+    width: 20%;
+    height: 100%;
+    background-image: url(../images/avada-wedding-mobile_2x.png);
+    background-position: center center;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 90%;
+    margin: 100px auto;
+}
+
+main section {
+    padding-top: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+main section h2 {
+    font-size: 36px;
+    line-height: 50px;
+}
+
+main section p {
+    color: #747474;
+    font-size: 20px;
+    width: 70%;
+    margin: 40px auto;
+    line-height: 40px;
+}
+
+main section .sectionImg {
+    width: 100%;
+    height: 100vh;
+    background-size: 1800px 1000px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+
+main section .roseIcon {
+    width: 50px;
+    height: 60px;
+    background-image: url(../images/rose.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+main section .heartIcon {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/heart.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.horizontalLine {
+    width: 150px;
+    height: 1px;
+    background-color: #c7d3d6;
+    margin: 30px auto;
+}
+
+.red {
+    color: #B9675E;
+}
+
+main section.invite .invitationLink span {
+    color: black;
+    font-size: 20px;
+}
+
+main section.invite .invitationLink a {
+    text-decoration: none;
+    color: #B9675E;
+    padding: 20px;
+}
+
+main section.invite div.sectionImg {
+    background-image: url(../images/Parallax_image_01-1.jpg);
+}
+
+main section.timing .timingWrapper {
+    width: 100%;
+    padding: 50px;
+    /* background-color: yellow; */
+}
+
+main section.timing .timingWrapper i {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-image: url(../images/temp.png);
+    background-repeat: no-repeat;
+    background-position: 50.5% bottom;
+}
+
+main section.timing .timingWrapper>h3 {
+    width: 130px;
+    height: 35px;
+    background-color: #EEE;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+main section.timing .wrapperColumns {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section.timing .columnParts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+main section.timing .columnPart {
+    width: 300px;
+    height: 300px;
+}
+
+main section.timing .columnPart img {
+    width: 100%;
+    height: 70%;
+    margin-bottom: -4px;
+}
+
+main section.timing .middleColumn {
+    width: 4px;
+    height: 700px;
+    background-color: #DDD;
+}
+
+main section.timing .columnContent {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gainsboro;
+    border-top: none;
+    border-bottom-width: 3px;
+}
+
+main section.timing .openClose {
+    display: none;
+}
+
+main section.timing .specialDay {
+    width: 100%;
+    height: 120px;
+    background-image: url(../images/countdown_bkgd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+main section.timing .specialDay h3 {
+    color: white;
+}
+
+main section.timing .specialDay h3 span {
+    font-size: 32px;
+}
+
+main section.timing .specialDay ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main section.timing .specialDay ul li {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    line-height: 40px;
+    color: #747881;
+    font-size: 20px;
+}
+
+main section.timing .specialDay a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+main section.venue {
+    width: 100%;
+    display: flex;
+}
+
+main section.venue .venueContent {
+    width: 60%;
+    background-color: #90A8AD;
+    text-align: left;
+    color: white;
+}
+
+main section.venue .venueContent .container {
+    width: 80%;
+}
+
+main section.venue .venueContent .horizontalLine {
+    margin-left: 0;
+}
+
+main section.venue .venueContent p {
+    width: 100%;
+    color: white;
+}
+
+main section.venue .imgPart {
+    width: 40%;
+    background-image: url(../images/post_06.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main section.story .storyPart {
+    width: 70%;
+    margin: 10px auto;
+    display: flex;
+    gap: 50px;
+}
+
+main section.story .storyPart .storyContent {
+    width: 70%;
+    text-align: left;
+}
+
+main section.story .storyPart .storyContent h3 {
+    text-transform: uppercase;
+}
+
+main section.story .storyPart .storyContent .horizontalLine {
+    margin-left: 0;
+}
+
+main section.story .storyPart .storyContent p {
+    width: 100%;
+}
+
+main section.story .storyPart .storyImg {
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+main section.story .storyPart .storyImg1 {
+    background-image: url(../images/circles_01.jpg);
+}
+
+main section.story .storyPart .storyImg2 {
+    background-image: url(../images/circles_02.jpg);
+}
+
+main section.story .storyPart .storyImg3 {
+    background-image: url(../images/circles_03.jpg);
+}
+
+main section.story .storyPart .storyImg4 {
+    background-image: url(../images/circles_04.jpg);
+}
+
+main section.story .storyPart .storyImg:hover {
+    background-size: 100%;
+    opacity: .9;
+}
+
+main section.story div.sectionImg {
+    background-image: url(../images/Parallax_image_03-1.jpg);
+}
+
+main section.gallery .galleryPart {
+    width: 100%;
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    /* background-color: red; */
+}
+
+main section.gallery .galleryPart img {
+    width: 30%;
+    transition: .5s;
+}
+
+main section.gallery .galleryPart img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px gray, -5px -5px 10px gray;
+}
+
+main section.gallery .groomAndBride {
+    display: flex;
+}
+
+main section.gallery .groomAndBride .avadaFamily {
+    width: 50%;
+    padding: 100px 0px;
+    background-size: cover;
+    background-position: left top;
+}
+
+main section.gallery .groomAndBride .avadaFamily p,
+main section.gallery .groomAndBride .avadaFamily h3 {
+    color: #333333;
+}
+
+main section.gallery .groomAndBride .avadaFamily img {
+    border-radius: 50%;
+}
+
+main section.gallery .groomAndBride .groom {
+    background-image: url(../images/groom_bg.jpg);
+}
+
+main section.gallery .groomAndBride .bride {
+    background-image: url(../images/bride_bg.jpg);
+}
+
+main section.gallery div.sectionImg {
+    background-image: url(../images/Parallax_image_02-1.jpg);
+}
+
+main section.detail {
+    width: 100%;
+    display: flex;
+}
+
+main section.detail .detailPart {
+    width: 60%;
+    height: 100%;
+    text-align: left;
+    padding: 30px 50px;
+}
+
+main section.detail .detailPart .horizontalLine {
+    margin-left: 0;
+}
+
+main section.detail .detailPart p {
+    margin-left: 0;
+    width: 100%;
+}
+
+main section.detail .detailPart .detailList li {
+    border-bottom: 1px solid #BBBBBB;
+    font-size: 20px;
+}
+
+main section.detail .detailPart .detailList li i {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 15px;
+    margin-left: 0;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+main section.detail .detailPart .detailList li span {
+    color: #B9675E;
+    cursor: pointer;
+}
+
+main section.detail .detailPart .detailList li span:hover {
+    color: black;
+}
+
+main section.detail .detailPart .detailList .showHide {
+    display: none;
+    transition: 10s;
+}
+
+main section.rsvp {
+    background-image: url(../images/rsvp_bg.jpg);
+    padding: 30px 0px;
+    color: white;
+}
+
+main section.rsvp p {
+    color: white;
+}
+
+main section.rsvp form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 60px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+main section.rsvp form input,
+main section.rsvp form textarea {
+    border: 1px solid #EEEEEE;
+    outline: none;
+    padding: 20px;
+    color: #BBBBBB;
+}
+
+main section.rsvp form input::placeholder {
+    color: #BBBBBB;
+}
+
+main section.rsvp form button {
+    background-color: #B9675E;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.elevator {
+    position: fixed;
+    z-index: 15;
+    bottom: 0;
+    right: 75px;
+    width: 50px;
+    height: 35px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    background-color: #333333;
+    cursor: pointer;
+    transition: 0.5s;
+    visibility: hidden;
+    background-image: url(../images/go_top.svg);
+    background-size: 15px 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.elevator:hover {
+    background-color: #747474;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: #90A8AD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 4;
+}
+
+footer h2 {
+    line-height: 50px;
+}
+
+footer h2 span {
+    font-size: 50px;
+}
+
+footer p {
+    margin-top: 30px;
+}
