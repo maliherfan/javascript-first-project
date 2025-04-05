@@ -148,7 +148,7 @@ main section p {
 
 main section .sectionImg {
     width: 100%;
-    height: 100vh;
+    height: 600px;
     background-size: 1800px 1000px;
     background-position: center center;
     background-repeat: no-repeat;
