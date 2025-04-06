@@ -102,3 +102,9 @@ window.addEventListener('scroll', function () {
     prevScrollPosition = newScrollPos <= 0 ? 0 : newScrollPos;//update previous scroll position
 });
 
+const hambergurMenu = document.querySelector('.nav ul.hamburger-menu');
+const toggleElement = document.querySelector('.hamburger');
+toggleElement.addEventListener('click', function () {
+    hambergurMenu.classList.toggle('toggled');
+});
+

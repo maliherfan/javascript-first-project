@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/aacf3391c4.js" crossorigin="anonymous"></script>
     <title>Avada Wedding</title>
     <link rel="icon" type="image/x-icon" href="assets/images/wedding-favicon.webp">
     <link rel="stylesheet" href="assets/style/theme.css">
@@ -17,14 +18,28 @@
             <a href="">RSVP NOW</a>
         </div>
         <div class="nav">
-            <ul class="leftMenu">
+            <label for="hamburger">
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+            </label>
+            <input type="checkbox" id="hamburger">
+            <ul class="hamburger-menu">
+                <li><a href="#" data-section="home">HOME</a></li>
+                <li><a href="#invite" data-section="invite">INVITE</a></li>
+                <li><a href="#timing" data-section="timing">TIMINGS</a></li>
+                <li><a href="#venue" data-section="venue">VENUE</a></li>
+                <li><a href="#story" data-section="story">STORY</a></li>
+                <li><a href="#gallery" data-section="gallery">GALLERY</a></li>
+                <li><a href="#detail" data-section="detail">DETAILS</a></li>
+                <li><a href="#rsvp" data-section="rsvp">RSVP</a></li>
+            </ul>
+            <ul class="outerMenu">
                 <li><a href="#" data-section="home">HOME</a></li>
                 <li><a href="#invite" data-section="invite">INVITE</a></li>
                 <li><a href="#timing" data-section="timing">TIMINGS</a></li>
                 <li><a href="#venue" data-section="venue">VENUE</a></li>
             </ul>
             <i class="avadaIcon"></i>
-            <ul class="rightMenu">
+            <ul class="outerMenu">
                 <li><a href="#story" data-section="story">STORY</a></li>
                 <li><a href="#gallery" data-section="gallery">GALLERY</a></li>
                 <li><a href="#detail" data-section="detail">DETAILS</a></li>
